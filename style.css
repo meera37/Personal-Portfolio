@@ -1,0 +1,106 @@
+:root {
+    --bg-color-light: white;          /* Light theme background color */
+    --bg-color-dark:#0a1a2a ;         /* Dark theme background color */
+    --highlight-color: #FED700;       /* Highlight color (yellow) */
+    --text-color-light: black;        /* Light mode text color */
+    --text-color-dark: white;         /* Dark mode text color */
+    --navbar-bg-light: white;         /* Light theme navbar background */
+    --navbar-bg-dark:#0a1a2a ;        /* Dark theme navbar background */
+}
+
+/* Light mode styles */
+body {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+/* Navbar in light mode */
+nav {
+    background-color: var(--navbar-bg-light);
+}
+nav a span{
+    font-family: "Italianno", serif;
+   
+}
+/* Dark mode styles */
+body.dark {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+/* Navbar in dark mode */
+body.dark nav {
+    background-color: var(--navbar-bg-dark);
+}
+
+/* Hover effects and highlights */
+body.dark a:hover, body.dark button:hover {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--highlight-color); /* Use highlight color for headings */
+}
+
+/* Navbar items (no box around items in dark theme) */
+nav ul {
+    background-color: transparent; /* No background color */
+    border: none;                  /* Remove any borders around navbar items */
+}
+
+/* Optional: Styling for links and icons on hover */
+a:hover, button:hover {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+/* Apply the color variables to the body and specific elements */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: var(--link-color);
+}
+/*
+header {
+    background-color: var(--header-bg);
+}
+
+nav {
+    background-color: var(--navbar-bg);
+}
+ */ 
+footer {
+    background-color: var(--footer-bg);
+}
+
+
+button {
+    background-color: none;
+    color: #fed800b0; 
+    padding: 0px;
+    /* border-radius: 5px; */
+    border: none;
+    cursor: pointer;         /* Make the cursor a pointer to show it's clickable */
+    display: inline-flex;     /* Allow for the icon to be inline */
+    align-items: center;      
+    justify-content: center; 
+}
+
+button i {
+    margin: 0;               
+    padding: 0; 
+    font-size: 24px;
+}
+/* .body.section{
+    background-color: #f5f5f5; 
+    transition: background-color 0.3s;
+} */
+body.dark.section {
+    background-color: #0a1a2a; /* Dark navy blue background for dark mode */
+}
