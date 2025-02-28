@@ -80,7 +80,7 @@ footer {
 }
 
 
-button {
+#theme-toggle {
     background-color: none;
     color: #fed800b0; 
     padding: 0px;
@@ -92,7 +92,7 @@ button {
     justify-content: center; 
 }
 
-button i {
+#theme-toggle i {
     margin: 0;               
     padding: 0; 
     font-size: 24px;
@@ -104,3 +104,4 @@ button i {
 body.dark.section {
     background-color: #0a1a2a; /* Dark navy blue background for dark mode */
 }
+
